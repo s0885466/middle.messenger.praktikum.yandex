@@ -1,1 +1,1 @@
-https://github.com/s0885466/middle.messenger.praktikum.yandex/compare/main...sprint_1
+https://github.com/s0885466/middle.messenger.praktikum.yandex/pull/1
