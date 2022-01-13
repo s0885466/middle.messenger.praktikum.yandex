@@ -1,0 +1,8 @@
+@import "src/tokens/sizes";
+
+.title {
+  font-weight: 700;
+  text-align: center;
+  font-size: map-get($indent, 's');
+  line-height: map-get($indent, 's');
+}

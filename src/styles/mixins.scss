@@ -1,0 +1,24 @@
+@import "src/tokens/sizes";
+@import "src/tokens/color";
+@import "src/tokens/boxShadow";
+
+@mixin centeringContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@mixin form {
+  width: 340px;
+  border-radius: map-get($indent, 'xxs');
+  box-shadow: $mainShadow;
+  padding: map-get($indent, 'm');
+}
+
+@mixin iconButton {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  padding: map-get($indent, 'xxxxs');
+}

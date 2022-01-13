@@ -1,0 +1,27 @@
+@import "src/tokens/color";
+@import "src/tokens/z-index";
+@import "src/styles/mixins";
+
+.modalWrapper {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $modalBackground;
+  z-index: map-get($zIndex, 'modalBackground');
+}
+
+.open {
+  display: flex;
+}
+
+.body {
+  @include form;
+  background-color: $secondary;
+  overflow-y: auto;
+  max-height: 80vh;
+}
