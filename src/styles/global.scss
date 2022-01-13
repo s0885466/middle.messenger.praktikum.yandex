@@ -1,0 +1,30 @@
+@import "./fonts";
+@import "src/tokens/sizes";
+@import "src/tokens/color";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: map-get($indent, 'xs');
+  font-family: Roboto, sans-serif
+}
+
+body {
+  background-color: $primary;
+}
+
+#root {
+  margin: auto;
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  background-color: $secondary;
+}
+
+a{
+  text-decoration: none;
+}

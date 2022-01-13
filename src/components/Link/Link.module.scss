@@ -1,0 +1,35 @@
+@import "src/tokens/color";
+@import "src/tokens/sizes";
+
+.link {
+  display: inline-block;
+  text-align: center;
+  border-radius: map-get($indent, 'xxs');
+  padding: map-get($indent, 'xxs') map-get($indent, 'sm');
+  font-size: map-get($indent, 'xxs');
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+
+  &.disabled {
+    pointer-events: none;
+    background-color: $disabled;
+    color: $primaryFont;
+    cursor: auto;
+  }
+}
+
+.block {
+  display: block;
+  width: 100%;
+}
+
+.primary {
+  background-color: $primary;
+  color: $secondary;
+}
+
+.secondary {
+  background-color: $secondary;
+  color: $primary;
+}

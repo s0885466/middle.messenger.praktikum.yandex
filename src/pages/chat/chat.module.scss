@@ -1,0 +1,68 @@
+@import "src/tokens/sizes";
+@import "src/tokens/color";
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  flex-shrink: 0;
+  width: 310px;
+  padding: map-get($indent, 'xxs');
+  background-color: $sidebarBackground;
+  overflow-y: auto;
+}
+
+.sidebarHeader {
+  margin-top: map-get($indent, 'xxs');
+  text-align: right;
+}
+
+.profileLink {
+  margin-left: auto;
+
+  font-size: map-get($indent, 'xxs');
+  color: $secondaryFont;
+  vertical-align: middle;
+
+  img {
+    vertical-align: middle;
+    margin-left: map-get($indent, 'xxxxs');
+  }
+}
+
+.searchWrapper {
+  margin-top: map-get($indent, 'sm');
+  position: relative;
+}
+
+.usersListWrapper {
+  margin-top: map-get($indent, 'xxs');
+}
+
+.main {
+  padding: 0 map-get($indent, 's');
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.profileWrapper {
+  flex-shrink: 0;
+}
+
+.messageListWrapper {
+  margin-top: map-get($indent, 'xxs');
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.messageFormWrapper {
+  margin-top: map-get($indent, 'xxs');
+  flex-shrink: 0;
+}
+
+
+

@@ -1,0 +1,63 @@
+@import "src/tokens/sizes";
+@import "src/tokens/color";
+
+.container {
+  position: relative;
+  display: flex;
+  height: 68px;
+  padding: map-get($indent, 'xxxs') map-get($indent, 'xxl') map-get($indent, 'xxxs') map-get($indent, 'xxxs');
+
+  &:hover {
+    background: $cardHoverBackground;
+  }
+
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+}
+
+.avatar {
+  flex-shrink: 0;
+  margin-right: map-get($indent, 'xxxs');
+}
+
+.name {
+  font-weight: 600;
+  font-size: map-get($indent, 'xxs');
+}
+
+.message {
+  margin-top: map-get($indent, 'xxxxs');
+  font-size: map-get($indent, 'xxs');
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.time {
+  position: absolute;
+  right: map-get($indent, 'xxxxs');
+  top: map-get($indent, 'xxxxs');
+  font-size: map-get($indent, 'xxs');
+  color: $label;
+}
+
+.messageCounter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: map-get($indent, 'xxxxs');
+  bottom: map-get($indent, 'xxxxs');
+  width: map-get($indent, 's');
+  height: map-get($indent, 's');
+  background-color: $primary;
+  border-radius: 50%;
+  font-size: map-get($indent, 'xxs');
+  color: $secondary;
+}
