@@ -1,5 +1,5 @@
-@import "src/tokens/color";
-@import "src/tokens/sizes";
+@import 'src/tokens/color';
+@import 'src/tokens/sizes';
 
 .button {
   border-radius: map-get($indent, 'xxs');

@@ -1,6 +1,6 @@
-@import "./fonts";
-@import "src/tokens/sizes";
-@import "src/tokens/color";
+@import './fonts';
+@import 'src/tokens/sizes';
+@import 'src/tokens/color';
 
 * {
   box-sizing: border-box;
@@ -10,7 +10,7 @@
 
 html {
   font-size: map-get($indent, 'xs');
-  font-family: Roboto, sans-serif
+  font-family: Roboto, sans-serif;
 }
 
 body {
@@ -25,6 +25,6 @@ body {
   background-color: $secondary;
 }
 
-a{
+a {
   text-decoration: none;
 }

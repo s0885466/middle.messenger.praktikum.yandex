@@ -1,11 +1,17 @@
-import {elements} from "src/constants/elements";
-import {insertHtmlBeforeEnd} from "src/utils/insertHtml";
-import {More} from "src/static/icons";
-import {MessageForm, MessagesList, Profile, Search, UsersList} from "src/modules/chat";
+import { elements } from 'src/constants/elements';
+import { insertHtmlBeforeEnd } from 'src/utils/insertHtml';
+import { More } from 'src/static/icons';
+import {
+  MessageForm,
+  MessagesList,
+  Profile,
+  Search,
+  UsersList,
+} from 'src/modules/chat';
 import style from './chat.module.scss';
 
 export const renderChatPage = () => {
-    const html = `
+  const html = `
         <div class="${style.container}">
             <aside class="${style.sidebar}">
                 <div class="${style.sidebarHeader}">
@@ -17,8 +23,8 @@ export const renderChatPage = () => {
                     </div>
                 </div>
                 <div class="${style.usersListWrapper}">
-                        ${UsersList}
-                    </div>
+                    ${UsersList}
+                </div>
             </aside>
             <section class="${style.main}">
                 <div class="${style.profileWrapper}">
@@ -33,5 +39,5 @@ export const renderChatPage = () => {
             </section>
         </div>`;
 
-    insertHtmlBeforeEnd(elements.root, html);
-}
+  insertHtmlBeforeEnd(elements.root, html);
+};

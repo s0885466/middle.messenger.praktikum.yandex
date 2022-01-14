@@ -1,1 +1,7 @@
-export {AuthButton, Login, Password, GoToRegistrationLink, Title} from './components/components';
+export {
+  AuthButton,
+  Login,
+  Password,
+  GoToRegistrationLink,
+  Title,
+} from './components/components';

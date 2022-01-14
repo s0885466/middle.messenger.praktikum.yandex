@@ -1,5 +1,5 @@
-@import "src/tokens/sizes";
-@import "src/tokens/color";
+@import 'src/tokens/sizes';
+@import 'src/tokens/color';
 
 .container {
   display: flex;
@@ -63,6 +63,3 @@
   margin-top: map-get($indent, 'xxs');
   flex-shrink: 0;
 }
-
-
-

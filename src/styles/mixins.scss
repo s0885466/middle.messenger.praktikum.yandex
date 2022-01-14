@@ -1,6 +1,6 @@
-@import "src/tokens/sizes";
-@import "src/tokens/color";
-@import "src/tokens/boxShadow";
+@import 'src/tokens/sizes';
+@import 'src/tokens/color';
+@import 'src/tokens/boxShadow';
 
 @mixin centeringContainer {
   display: flex;

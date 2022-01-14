@@ -1,6 +1,5 @@
-const getAttribute = attribute => value => value
-    ? `${attribute}="${value}"`
-    : '';
+const getAttribute = (attribute) => (value) =>
+  value ? `${attribute}="${value}"` : '';
 
 //TODO возможно удобнее будет переписать на массив аттрибутов
 export const getDisabled = getAttribute('disabled');

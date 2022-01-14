@@ -1,11 +1,12 @@
-@import "src/tokens/sizes";
-@import "src/tokens/color";
+@import 'src/tokens/sizes';
+@import 'src/tokens/color';
 
 .container {
   position: relative;
   display: flex;
   height: 68px;
-  padding: map-get($indent, 'xxxs') map-get($indent, 'xxl') map-get($indent, 'xxxs') map-get($indent, 'xxxs');
+  padding: map-get($indent, 'xxxs') map-get($indent, 'xxl')
+    map-get($indent, 'xxxs') map-get($indent, 'xxxs');
 
   &:hover {
     background: $cardHoverBackground;

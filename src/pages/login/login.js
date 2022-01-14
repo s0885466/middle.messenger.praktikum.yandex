@@ -1,11 +1,16 @@
-import {AuthButton, Login, Password, GoToRegistrationLink, Title} from "src/modules/login";
-import {elements} from "src/constants/elements";
-import {insertHtmlBeforeEnd} from "src/utils/insertHtml";
+import {
+  AuthButton,
+  Login,
+  Password,
+  GoToRegistrationLink,
+  Title,
+} from 'src/modules/login';
+import { elements } from 'src/constants/elements';
+import { insertHtmlBeforeEnd } from 'src/utils/insertHtml';
 import style from './login.module.scss';
 
 export const renderLoginPage = () => {
-
-    const html = `
+  const html = `
         <div class="${style.container}">
             <form class="${style.form}">
                 <div class="${style.titleWrapper}">
@@ -23,5 +28,5 @@ export const renderLoginPage = () => {
        </div>
     `;
 
-    insertHtmlBeforeEnd(elements.root, html);
-}
+  insertHtmlBeforeEnd(elements.root, html);
+};
