@@ -4,7 +4,7 @@ import style from './UserItem.module.scss';
 export function createUserItem() {
   return `
         <article class="${style.container}">
-            <img class="${style.avatar}" src="${DefaultAvatar}" width="48" height="48">
+            <img class="${style.avatar}" src="${DefaultAvatar}">
             <div class="${style.content}">
                 <h3 class="${style.name}">Илья</h3>
                 <div class="${style.message}">

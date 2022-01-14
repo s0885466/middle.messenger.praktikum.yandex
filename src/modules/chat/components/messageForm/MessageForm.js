@@ -5,11 +5,11 @@ export function createMessageForm() {
   return `
         <div class="${style.container}">
             <button class="${style.iconButton}">
-                <img src="${Clip}" width="30" height="30">
+                <img src="${Clip}">
             </button>
             <input type="text" class="${style.messageInput}" placeholder="Сообщение">
             <button class="${style.iconButton}">
-                <img src="${ArrowRight}" width="28" height="28">
+                <img src="${ArrowRight}">
             </button>
         </div>
     `;
