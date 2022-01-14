@@ -16,10 +16,13 @@ export function createButton({
     styles[variant],
     classNames
   );
-  const attributes = getClassNames(getDisabled(disabled), getType(type));
 
   return `
-        <button class="${className}" type="${type}" disabled="${disabled}">
+        <button 
+            class="${className}" 
+            ${getType(type)}
+            ${getDisabled(disabled)}
+        >
             ${text}
         </button>
     `;
