@@ -1,0 +1,32 @@
+@import 'src/tokens/color';
+@import 'src/tokens/sizes';
+
+.button {
+  border-radius: map-get($indent, 'xxs');
+  padding: map-get($indent, 'xxs') map-get($indent, 'sm');
+  font-size: map-get($indent, 'xxs');
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+
+  &:disabled {
+    background-color: $disabled;
+    color: $primaryFont;
+    cursor: auto;
+  }
+}
+
+.block {
+  display: block;
+  width: 100%;
+}
+
+.primary {
+  background-color: $primary;
+  color: $secondary;
+}
+
+.secondary {
+  background-color: $secondary;
+  color: $primary;
+}

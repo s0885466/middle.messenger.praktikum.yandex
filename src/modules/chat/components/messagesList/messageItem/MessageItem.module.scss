@@ -1,0 +1,29 @@
+@import 'src/tokens/color';
+@import 'src/tokens/sizes';
+
+.container {
+  position: relative;
+  background-color: $backgroundMessage;
+  max-width: 402px;
+  padding: map-get($indent, 'xxs') map-get($indent, 'l') map-get($indent, 'xxs')
+    map-get($indent, 'xxs');
+  border-radius: map-get($indent, 'xxxs');
+  align-self: flex-start;
+
+  .messageTime {
+    position: absolute;
+    right: map-get($indent, 'xxxs');
+    bottom: map-get($indent, 'xxxs');
+    font-size: map-get($indent, 'xxs');
+    color: $label;
+  }
+
+  &.myMessage {
+    align-self: flex-end;
+    background-color: $backgroundMyMessage;
+
+    .messageTime {
+      color: $primary;
+    }
+  }
+}

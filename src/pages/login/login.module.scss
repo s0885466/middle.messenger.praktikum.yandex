@@ -1,0 +1,28 @@
+@import 'src/tokens/sizes';
+@import 'src/tokens/color';
+@import 'src/tokens/boxShadow';
+@import 'src/styles/mixins';
+
+.container {
+  @include centeringContainer;
+}
+
+.form {
+  @include form;
+}
+
+.titleWrapper {
+  margin-top: map-get($indent, 'xs');
+}
+
+.inputGroup {
+  margin-top: map-get($indent, 'l');
+}
+
+.inputWrapper:not(:first-child) {
+  margin-top: map-get($indent, 'xxxs');
+}
+
+.buttonGroup {
+  margin-top: map-get($indent, 'xxxl');
+}

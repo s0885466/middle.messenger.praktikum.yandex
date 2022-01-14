@@ -1,0 +1,46 @@
+@import 'src/tokens/color';
+@import 'src/tokens/sizes';
+
+.container {
+  position: relative;
+  height: map-get($indent, 'xl');
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &:after {
+    width: 100%;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid $primary;
+  }
+
+  &.error:after {
+    border-bottom: 1px solid $error;
+  }
+}
+
+.input {
+  padding: map-get($indent, 'xxxxs') 0;
+  font-size: map-get($indent, 'xxs');
+  border: none;
+  outline: none;
+}
+
+.label {
+  color: $label;
+  font-size: map-get($indent, 'xxxs');
+  line-height: map-get($indent, 'xxxs');
+}
+
+.errorMessage {
+  color: $error;
+  font-size: map-get($indent, 'xxxs');
+  position: absolute;
+  bottom: map-get($indent, 'none');
+}
