@@ -1,11 +1,12 @@
-@import "src/tokens/color";
-@import "src/tokens/sizes";
+@import 'src/tokens/color';
+@import 'src/tokens/sizes';
 
 .container {
   position: relative;
   background-color: $backgroundMessage;
   max-width: 402px;
-  padding: map-get($indent, 'xxs') map-get($indent, 'l') map-get($indent, 'xxs') map-get($indent, 'xxs');
+  padding: map-get($indent, 'xxs') map-get($indent, 'l') map-get($indent, 'xxs')
+    map-get($indent, 'xxs');
   border-radius: map-get($indent, 'xxxs');
   align-self: flex-start;
 

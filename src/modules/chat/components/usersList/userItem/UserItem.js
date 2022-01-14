@@ -1,8 +1,8 @@
-import {DefaultAvatar} from "src/static/icons";
+import { DefaultAvatar } from 'src/static/icons';
 import style from './UserItem.module.scss';
 
 export function createUserItem() {
-    return `
+  return `
         <article class="${style.container}">
             <img class="${style.avatar}" src="${DefaultAvatar}" width="48" height="48">
             <div class="${style.content}">
@@ -15,5 +15,5 @@ export function createUserItem() {
             <div class="${style.time}">10:49</div>
             <div class="${style.messageCounter}">3</div>
         </article>
-    `
+    `;
 }

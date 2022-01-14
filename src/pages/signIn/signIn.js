@@ -1,21 +1,21 @@
-import {elements} from "src/constants/elements";
-import {insertHtmlBeforeEnd} from "src/utils/insertHtml";
+import { elements } from 'src/constants/elements';
+import { insertHtmlBeforeEnd } from 'src/utils/insertHtml';
 import {
-    ConfirmPassword,
-    Email,
-    FirstName,
-    GoToAuthenticationLink,
-    LastName,
-    Login,
-    Password,
-    Phone,
-    RegisterButton,
-    Title
-} from "src/modules/signIn";
+  ConfirmPassword,
+  Email,
+  FirstName,
+  GoToAuthenticationLink,
+  LastName,
+  Login,
+  Password,
+  Phone,
+  RegisterButton,
+  Title,
+} from 'src/modules/signIn';
 import style from './signIn.module.scss';
 
 export const renderSignInPage = () => {
-    const html = `
+  const html = `
         <div class="${style.container}">
             <form class="${style.form}">
                 <div class="${style.titleWrapper}">
@@ -38,5 +38,5 @@ export const renderSignInPage = () => {
         </div>
     `;
 
-    insertHtmlBeforeEnd(elements.root, html);
-}
+  insertHtmlBeforeEnd(elements.root, html);
+};

@@ -1,5 +1,5 @@
-@import "src/styles/mixins";
-@import "src/tokens/sizes";
+@import 'src/styles/mixins';
+@import 'src/tokens/sizes';
 
 .container {
   @include centeringContainer;
@@ -17,6 +17,6 @@
 .linkWrapper {
   margin-top: map-get($indent, 'm');
   a {
-    font-size: map-get($indent, 'xxxs');;
+    font-size: map-get($indent, 'xxxs');
   }
 }

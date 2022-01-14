@@ -1,7 +1,8 @@
 {
   "name": "yandex-chat",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel build index.html && node server.js",
+    "dev": "parcel index.html",
     "build": "parcel build index.html"
   },
   "alias": {
@@ -13,6 +14,7 @@
   "description": "",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.1.1",
-    "parcel": "^2.1.1"
+    "parcel": "^2.1.1",
+    "prettier": "2.5.1"
   }
 }

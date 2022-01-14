@@ -1,5 +1,5 @@
-@import "src/tokens/color";
-@import "src/tokens/sizes";
+@import 'src/tokens/color';
+@import 'src/tokens/sizes';
 
 .container {
   position: relative;
@@ -13,7 +13,7 @@
 
   &:after {
     width: 100%;
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
