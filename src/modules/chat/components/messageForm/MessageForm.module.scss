@@ -1,0 +1,41 @@
+@import 'src/tokens/sizes';
+@import 'src/tokens/color';
+@import 'src/styles/mixins';
+
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: map-get($indent, 'xxxl');
+
+  &:before {
+    top: 0;
+    position: absolute;
+    content: '';
+    width: 100%;
+    border: 1px solid $hrColor;
+  }
+}
+
+.iconButton {
+  @include iconButton;
+  > img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.messageInput {
+  flex-grow: 1;
+  border-radius: 30px;
+  border: none;
+  padding: map-get($indent, 'xxxs') map-get($indent, 's');
+  outline: none;
+  background-color: $secondaryInputBackground;
+  font-size: map-get($indent, 'xxs');
+  color: $secondaryFont;
+
+  &::placeholder {
+    color: $secondaryFont;
+  }
+}

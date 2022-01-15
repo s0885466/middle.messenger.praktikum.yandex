@@ -1,0 +1,20 @@
+@import 'src/tokens/sizes';
+@import 'src/tokens/color';
+
+.search {
+  color: $secondaryFont;
+  border: none;
+  padding: map-get($indent, 'xxs') map-get($indent, 'sm');
+  width: 100%;
+  background-color: $secondaryInputBackground;
+  border-radius: map-get($indent, 'xxxxs');
+  text-align: center;
+}
+
+.searchIcon {
+  top: 50%;
+  left: map-get($indent, 'xxxs');
+  transform: translateY(-50%);
+  position: absolute;
+  fill: red;
+}

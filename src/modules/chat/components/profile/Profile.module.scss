@@ -1,0 +1,40 @@
+@import 'src/tokens/sizes';
+@import 'src/tokens/color';
+@import 'src/styles/mixins';
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: map-get($indent, 'xxxl');
+
+  &:after {
+    bottom: 0;
+    position: absolute;
+    content: '';
+    width: 100%;
+    border: 1px solid $hrColor;
+  }
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  margin-right: map-get($indent, 'xxxs');
+}
+
+.username {
+  font-weight: 600;
+  font-size: map-get($indent, 'xxs');
+  margin-right: auto;
+}
+
+.dropdown {
+  @include iconButton;
+
+  > img {
+    width: 3px;
+    height: 15px;
+  }
+}

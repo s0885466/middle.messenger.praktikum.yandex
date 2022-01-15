@@ -1,0 +1,10 @@
+@import 'src/tokens/sizes';
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  & > div:not(:first-child) {
+    margin-top: map-get($indent, 'xxs');
+  }
+}
