@@ -1,7 +1,7 @@
 {
   "name": "yandex-chat",
   "scripts": {
-    "start": "parcel build index.html && node server.js",
+    "start": "parcel build index.html && node server.ts",
     "dev": "parcel index.html",
     "build": "parcel build index.html"
   },
